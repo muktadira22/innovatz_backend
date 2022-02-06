@@ -1,0 +1,21 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "admin",
+  "database": "innovatz_assignment_db",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/database/entity/**/*.ts"],
+  "migrations": ["src/database/migration/**/*.ts"],
+  "subscribers": ["src/database/subscriber/**/*.ts"],
+
+  "seeds": ["src/database/seeds/**/*{.ts,.js}"],
+  "factories": ["src/database/factories/**/*{.ts,.js}"],
+  "cli": {
+    "entitiesDir": "src/database/entity",
+    "migrationsDir": "src/database/migration",
+    "subscribersDir": "src/database/subscriber"
+  }
+}
